@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import './Desplegable.css'
 import 'animate.css'
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEye } from "@fortawesome/free-regular-svg-icons"
 
 const Desplegable = ( {question, answer} ) => {
 
@@ -16,8 +16,7 @@ const Desplegable = ( {question, answer} ) => {
         <>
             <div className="desplegable-question">
                 <h2>{question}</h2>
-                <h6 onClick={showAnswer}>Show</h6>
-                {/* <FontAwesomeIcon icon="fa-regular fa-eye" /> */}
+                 <FontAwesomeIcon icon={faEye} onClick={showAnswer} className="icon" /> 
             </div>
             { toggle ? <div className="animate__animated animate__fadeIn desplegable-answer"> <p>{answer}</p> </div> : '' }
         </>

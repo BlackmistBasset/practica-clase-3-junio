@@ -18,16 +18,16 @@
     margin: 10px;
 }
 
-.desplegable-question h2, h6 {
+.desplegable-question h2, .icon {
     margin: 10px 10px;
-    color:rgb(99, 6, 6);
+    color: black;
 }
 
 .desplegable-question h2 {
     font-size: 1.1em;
 }
 
-.desplegable-question h6 {
+.icon {
     cursor: pointer;
 }
 
